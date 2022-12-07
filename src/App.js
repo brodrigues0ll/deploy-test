@@ -40,7 +40,7 @@ function App() {
               <tr key={index}>
                 <td>
                   {item}
-                  <button onClick={remove}>Delete</button>
+                  <p onClick={remove}>✖</p>
                 </td>
               </tr>
             ))}

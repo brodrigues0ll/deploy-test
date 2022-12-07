@@ -62,3 +62,16 @@ th, td {
 tr:nth-child(even) {
   background-color: aquamarine;
 }
+
+.table p {
+  background-color: #ca4646;
+  border: none;
+  color: white;
+  padding: 8px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
