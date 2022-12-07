@@ -26,25 +26,27 @@ function App() {
       <input type="text" onChange={(e) => setInput(e.target.value)} />
       <button type='button' onClick={add}>Add</button>
 
-      <table>
-        <thead>
-          <tr key="">
-            <th>Task</th>
-          </tr>
-          <tr key=""></tr>
-        </thead>
-
-        <tbody>
-          {taskArr.map((item, index) => (
-            <tr key={index}>
-              <td>
-                {item}
-                <button onClick={remove}>Delete</button>
-              </td>
+      <div className='table'>
+        <table >
+          <thead>
+            <tr key="">
+              <th>Task</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+            <tr key=""></tr>
+          </thead>
+
+          <tbody>
+            {taskArr.map((item, index) => (
+              <tr key={index}>
+                <td>
+                  {item}
+                  <button onClick={remove}>Delete</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
